@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+</head>
+
+<body>
+<style type="text/css">
+	.divCss1
+	{
+		background: black;font-size: 40px;height: 100px;width: 100px;color: white;
+		border-radius: 15px;text-align: center;position: absolute;
+		transition: margin-left 0.05s , margin-top 0.05s;
+
+	}
+	.divCss2
+	{
+		background: black;font-size: 40px;height: 100px;width: 100px;color: white;
+		border-radius: 15px;text-align: center;position: absolute;
+		transition: margin-left 0.075s , margin-top 0.075s;
+
+	}	
+	.divCss3
+	{
+		background: black;font-size: 40px;height: 100px;width: 100px;color: white;
+		border-radius: 15px;text-align: center;position: absolute;
+		transition: margin-left 0.1s , margin-top 0.1s;
+
+	}
+	.divCss4
+	{
+		background: black;font-size: 40px;height: 100px;width: 100px;color: white;
+		border-radius: 15px;text-align: center;position: absolute;
+		transition: margin-left 0.125s , margin-top 0.125s;
+
+	}
+	.divCss5
+	{
+		background: black;font-size: 40px;height: 100px;width: 100px;color: white;
+		border-radius: 15px;text-align: center;position: absolute;
+		transition: margin-left 0.15s , margin-top 0.15s;
+
+	}
+</style>
+
+
+<div class="divCss1">
+甩开我啊
+</div>
+<div class="divCss2">
+甩开我啊
+</div>
+<div class="divCss3">
+甩开我啊
+</div>
+<div class="divCss4">
+甩开我啊
+</div>
+<div class="divCss5">
+甩开我啊
+</div>
+
+
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+var x;
+var y;
+
+$(document).ready(function(){
+  $(document).mousemove(function(e){
+    x=e.pageX - 50 ;
+    y=e.pageY - 50 ;
+
+    $("div").attr("style","margin-left:"+x+"px"+";margin-top:"+y+"px;");
+    
+
+
+  });
+});
+
+</script> 
+
+
+</body>
+</html>
